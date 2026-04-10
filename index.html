@@ -556,28 +556,40 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-24 px-6">
+ <!-- Testimonials Section -->
+    <section class="py-24 px-6 reveal">
         <div class="max-w-4xl mx-auto">
+            <!-- Header -->
             <div class="text-center mb-16">
-                <span class="text-[10px] font-black tracking-[0.5em] text-pink-500 uppercase mb-2 block">Citizens Voice</span>
-                <h2 class="text-4xl font-black italic uppercase tracking-tighter text-white">Suara <span class="text-pink-500">Warga</span></h2>
+                <h2 class="text-3xl font-black italic uppercase tracking-tighter text-white">Suara <span class="text-red-600">Warga</span></h2>
+                <div class="h-1 w-12 bg-red-600 mx-auto mt-4 opacity-50"></div>
             </div>
             
-            <!-- Testimonial Card Tunggal (Biar lebih fokus) -->
-            <div class="glass-card p-12 rounded-[3rem] relative overflow-hidden group border-l-4 border-pink-500">
-                <div class="absolute top-8 left-10 text-pink-500/20 text-9xl font-serif">“</div>
-                <p class="text-gray-300 text-lg md:text-xl italic mb-10 relative z-10 leading-relaxed">
+            <!-- Card -->
+            <div class="glass-card p-10 md:p-16 rounded-[3rem] relative overflow-hidden border-l-4 border-red-600">
+                <!-- Tanda Kutip Gede (Background) -->
+                <div class="absolute top-10 left-10 text-white/5 text-[15rem] font-serif pointer-events-none select-none">“</div>
+                
+                <!-- Isi Testi -->
+                <p class="text-gray-300 text-lg md:text-2xl italic mb-12 relative z-10 leading-relaxed font-medium">
                     "I enjoy being in the server it's good idk what else to say"
                 </p>
-
-                <div class="flex items-center gap-5 relative z-10">
-                    <!-- Foto Live Massachusetts husband -->
-                    <img data-discord-username="Massachusetts husband ☪️" 
-                        src="https://cdn.discordapp.com/embed/avatars/2.png" alt="Testimonial citizen" width="64" height="64" loading="lazy" decoding="async"
-                        class="discord-avatar w-16 h-16 rounded-full object-cover border-2 border-pink-500/30">
-                    <div>
-                        <h5 class="font-bold text-white text-lg">Massachusetts husband</h5>
-                        <span class="text-xs font-black uppercase tracking-[0.2em] text-pink-500 bg-pink-950/20 px-2 py-1 rounded-md">AZUR</span>
+    
+                <!-- Profil Warga (Horizontal Layout) -->
+                <div class="flex items-center gap-6 relative z-10">
+                    <!-- WRAPPER FOTO: Biar gak raksasa, kita kunci di sini wak -->
+                    <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-full border-2 border-red-600/30 p-1 bg-[#050505] shadow-xl">
+                        <img data-discord-username="Massachusetts husband ☪️" 
+                             src="https://cdn.discordapp.com/embed/avatars/2.png" 
+                             class="discord-avatar w-full h-full rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+    
+                    <div class="flex flex-col gap-1">
+                        <h5 class="font-black text-white text-xl tracking-tight uppercase italic">Massachusetts husband</h5>
+                        <div class="flex items-center gap-2">
+                            <span class="status-dot w-2 h-2 rounded-full bg-gray-600"></span>
+                            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-red-500">AZUR Citizen</span>
+                        </div>
                     </div>
                 </div>
             </div>
